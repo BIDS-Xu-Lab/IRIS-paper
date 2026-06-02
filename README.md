@@ -11,7 +11,12 @@ To run the complete pipeline:
 4. Run `bash run-metrics-beta.sh` from `analysis/`
 5. Run all notebooks (`*.ipynb`) in `plotting/`
 
-**Reproducibility note:** layouts created by IRIS and multi-threaded UMAP do not support random seeds. Rerunning the
-layouts (step 1) may thus produce slightly different results. However, the findings described in the paper should be
-rebust to these variations. Since random states are set for analysis steps that require randomness (e.g. 5-fold
-cross-validation), starting from downloaded outputs should produce the results represented in figures.
+**Reproducibility note:** Neither IRIS nor multi-threaded UMAP support random seeds. This means rerunning the
+experiments (step 2) will produce layouts that look different, especially in terms of high-level organization,
+and may also produce slightly different quantitaive results. However, the overall findings described in the paper
+should be robust to these variations. Since random states are set for analysis steps that require stochasticity
+(e.g. 5-fold cross-validation), starting from downloaded outputs (steps 3-5) should exactly reproduce the results
+represented in figures.
+
+IRIS can be installed from PyPI, e.g. `pip install iris-learn`. If you are looking for IRIS source code (for
+development or editable installation), see https://github.com/BIDS-Xu-Lab/IRIS.
