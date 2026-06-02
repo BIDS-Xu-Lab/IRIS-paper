@@ -1,0 +1,1 @@
+python metrics.py main iris-b.95,umap-md0.1,umap-md0.5 knn,svr

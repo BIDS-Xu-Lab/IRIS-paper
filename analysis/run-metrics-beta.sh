@@ -1,0 +1,1 @@
+python metrics.py beta iris-b0,iris-b.5,iris-b.75,iris-b.9,iris-b.95,iris-b1 knn,ent
