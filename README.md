@@ -1,7 +1,7 @@
 # IRIS-paper
 Experiments for "IRIS: time-structured manifold projections"
 
-Requirements: iris-learn, matplotlib, seaborn
+Requirements: iris-learn, pandas, matplotlib, seaborn
 
 To run the complete pipeline:
 
